@@ -1,4 +1,8 @@
 ---
+layout: post
+title: "Anvent of Code 2023. День 1"
+date: 2024-01-14 18:00 +0300
+categories: advent-of-code
 published: true
 ---
 ## Anvent of Code 2023. День 1
