@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Anvent of Code 2023. День 1
 
