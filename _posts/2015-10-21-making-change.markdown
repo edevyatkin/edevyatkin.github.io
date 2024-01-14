@@ -38,7 +38,7 @@ $$ M(k) = min_i\{M(k-i)\} + 1, $$
 
 Реализация решения по этой формуле выглядит так (Java):
 
-{% highlight java %}
+```java
 public static int makeChange(int change) {
   if (change < 0)
     return Integer.MAX_VALUE;
@@ -54,7 +54,7 @@ public static int makeChange(int change) {
 
   return minimum(min1, min2, min5, min10) + 1;
 }
-{% endhighlight %}
+```
 
 Начальные условия - сдача, которую нужно вернуть.
 
@@ -64,7 +64,7 @@ public static int makeChange(int change) {
 
 Оптимизировать решение можно с помощью динамического программирования с запоминанием (memoization).
 
-{% highlight java %}
+```java
 public static int makeChange2(int change) {
   if (change == 1 || change == 3 || change == 5 || change == 10) {
     return 1;
@@ -99,7 +99,7 @@ public static int makeChange2(int change) {
   return memo[change];
 
 }
-{% endhighlight %}
+```
 
 В этом варианте решения сложность по времени будет $$ O(n) $$, но требуется дополнительная память на $$ n $$ сумм сдачи.
 
